@@ -6,7 +6,7 @@ This library is used for Synapse Spark to connect Azure SQL in JDBC authenticate
 2. Upload `target/token-library-mssql-jdbc-adaptor-*.jar` and `target/dependency/mssql-jdbc-*.jar` as Spark pool packages.
 3. Specify the callback class as `org.konjac.TokenLibraryCallback` in JDBC parameters.
 ```scala
-val df = spark.read
+spark.read
   .format("jdbc")
   .option("url", "jdbc:sqlserver://{serverName}.database.windows.net;database={databaseName}")
   .option("driver", "com.microsoft.sqlserver.jdbc.SQLServerDriver")
