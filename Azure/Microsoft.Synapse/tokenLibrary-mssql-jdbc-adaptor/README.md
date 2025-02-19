@@ -1,6 +1,6 @@
 # Token Library adaptor for MSSQL JDBC
 
-This library is used for Synapse Spark to connect Azure SQL in JDBC authenticated with Microsoft Entra ID.
+This project is used for Synapse Spark to connect Azure SQL in JDBC authenticated with Microsoft Entra ID.
 
 1. Build the project
 2. Upload `target/token-library-mssql-jdbc-adaptor-*.jar` and `target/dependency/mssql-jdbc-*.jar` as Spark pool packages.
